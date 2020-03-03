@@ -1,0 +1,33 @@
+{
+    "include": [
+        "./src"
+    ],
+    "compilerOptions": {
+        "declarationDir": "./lib",
+        "outDir": "./lib",
+        "rootDir": "./src",
+        "incremental": true,
+        "moduleResolution": "node",
+        "target": "es5",
+        "module": "commonjs",
+        "lib": [
+            "es2015",
+            "es2016",
+            "es2017",
+            "es2018",
+            "dom"
+        ],
+        "strict": false,
+        "sourceMap": true,
+        "declaration": true,
+        "allowSyntheticDefaultImports": true,
+        "experimentalDecorators": true,
+        "jsx": "react",
+        "esModuleInterop": true,
+        "noUnusedLocals": false,
+        "noUnusedParameters": false,
+        "skipLibCheck": true,
+        "noEmitOnError": true,
+        "importHelpers": false
+    }
+}

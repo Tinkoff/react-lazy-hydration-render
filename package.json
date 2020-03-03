@@ -1,0 +1,31 @@
+{
+  "name": "react-lazy-hydration-render",
+  "version": "0.9.1",
+  "description": "React lazy hydration render. Small library to improve hydration performance in SSR apps. It is based on a lazy hydration approach.",
+  "keywords": ["react", "hydration", "SSR", "performance", "lazy hydration"],
+  "main": "lib/index.js",
+  "typings": "lib/index.d.ts",
+  "license": "Apache-2.0",
+  "browser": {
+    "./lib/use-observer-visible.js": "./lib/use-observer-visible.browser.js",
+    "./lib/index.es.js": "./lib/index.browser.js"
+  },
+  "files": [
+    "lib"
+  ],
+  "sideEffects": false,
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/TinkoffCreditSystems/react-lazy-hydration-render"
+  },
+  "scripts": {
+    "watch": "tsc -w"
+  },
+  "dependencies": {},
+  "devDependencies": {},
+  "peerDependencies": {
+    "react": "^16.0.0"
+  },
+  "module": "lib/index.es.js",
+  "es2017": "lib/index.es2017.js"
+}
