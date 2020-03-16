@@ -99,8 +99,10 @@ const useClickActivated = (ref) => {
     if (!ref.current || isVisible) {
       return;
     }
-
-    ref.current.addEventListener('click', () => changeVisibility(true));
+    const handler = () => changeVisibility(true);
+    ref.current.addEventListener('click', handler);
+    
+    return () => ref.current.removeEventListener('click', handler);
   }, [ref]);
 
   return isVisible;
